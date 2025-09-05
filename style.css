@@ -8,7 +8,7 @@ ul{
     list-style-type: none;
 }
 body{
-    font-family: Roboto, sans-serif;
+    font-family: Roboto;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -87,7 +87,7 @@ header p{
     background-color: white;
 }
 .item {
-    width: 150px;
+    width: 160px;
 }
 .container{
     display: flex;
@@ -107,10 +107,31 @@ header p{
     border: 6px solid #3882F6;
     border-radius: 10px;
 }
-
+.quote{
+    background-color: #E5E7EB;
+    padding: 100px 500px;
+    font-family: system-ui;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+#quote{
+    font-size: 36px;
+    color: #1f2937;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+#author{
+    margin: 0;
+    align-self: flex-end;
+    font-weight: 900;
+    font-size: 20px;
+}
 
 @media only screen and (min-width: 2000px){
     header {padding: 0px 720px;}
     .intro {padding: 0 720px;}
     .info {padding: 40px 720px;}
+    .quote {padding: 100px 860px;}
+
 }
