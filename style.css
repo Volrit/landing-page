@@ -10,22 +10,13 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    flex-shrink: 0;
+    background-color: #1f2937;
 }
 
 header{
-    height: 42px;
-    background-color: #1F2932;
     padding: 20px 360px;
     display: flex;
     align-items: center;
-}
-
-
-#background-header{
-    height: 500px;
-    background-color: #1F2932;
-    padding: 20px 360px;
 }
 
 header ul {
@@ -34,34 +25,18 @@ header ul {
     gap: 20px;
     font-size: 18px;
     color: #E5E7EB;
+    flex-shrink:0;
 }
 
 header p{
     font-weight: 900;
     color: #F9FAF8;
     font-size: 24px;
+    flex-shrink:0;
 }
-
-.bottom-header{
-    display: flex;
-    width: 40%;
-    flex-wrap: wrap;
-}
-#header-img{
-    background-color: grey;
-    color: #F9FAF8;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 18px;
-}
-#bottom-header-split{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 100px;
-}
-.intro button{
+.intro a{
     background-color: #3882F6;
+    display: flex;
     border: 0;
     width: 150px;
     height: 50px;
@@ -69,6 +44,8 @@ header p{
     font-size: 18px;
     color: #F9FAF8;
     border-radius: 10px;
+    align-items: center;
+    justify-content: center;
 }
 .intro img{
     width: 600px;
@@ -83,6 +60,7 @@ header p{
     display: flex;
     gap: 10px;
     margin-top: 15px;
+    padding: 0 360px;
 }
 
 .intro p{
@@ -94,4 +72,5 @@ header p{
     color: #F9FAF8;
     font-size: 48px;
     font-weight: 900;
+    margin:0;
 }
