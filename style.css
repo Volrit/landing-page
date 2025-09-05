@@ -16,7 +16,9 @@ body{
 }
 
 header{
-    padding: 20px 360px;
+    margin: 0;
+    padding: 0px 360px;
+    margin-bottom: 30px;
     display: flex;
     align-items: center;
 }
@@ -77,7 +79,38 @@ header p{
     margin:0;
 }
 
+.info{
+    justify-content: center;
+    margin-top: 120px;
+    padding: 40px 360px;
+    text-align: center;
+    background-color: white;
+}
+.item {
+    width: 150px;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.info h1{
+    color: #1f2937;
+    font-weight: 900;
+    font-size: 36px;
+    top: 200px;
+}
+.container img{
+    width: 140px;
+    height: 140px;
+
+    border: 6px solid #3882F6;
+    border-radius: 10px;
+}
+
+
 @media only screen and (min-width: 2000px){
-    header {padding: 40px 720px;}
+    header {padding: 0px 720px;}
     .intro {padding: 0 720px;}
+    .info {padding: 40px 720px;}
 }
