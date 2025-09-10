@@ -8,7 +8,7 @@ ul{
     list-style-type: none;
 }
 body{
-    font-family: Roboto;
+    font-family: Roboto, serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -16,9 +16,8 @@ body{
 }
 
 header{
-    margin: 0;
-    padding: 0px 360px;
-    margin-bottom: 30px;
+    padding: 0 360px;
+    margin: 0 0 30px;
     display: flex;
     align-items: center;
 }
@@ -131,7 +130,6 @@ header a:hover{
 #author{
     margin: 0;
     align-self: flex-end;
-    font-weight: auto;
     font-weight: 600;
     font-size: 20px;
 }
@@ -153,7 +151,7 @@ header a:hover{
     font-weight: 900;
     color:#F9FAF8;
     font-size: 24px;
-    font-family: 'Roboto';
+    font-family: 'Roboto', serif;
     margin: 0;
 }
 .blue p{
@@ -175,7 +173,6 @@ header a:hover{
     justify-content: center;
     box-sizing: border-box;
     margin-left: auto;
-    align-self: center;
 }
 .blue a:hover{
     background-color:#1567ec;
@@ -189,9 +186,30 @@ footer{
 }
 
 @media only screen and (min-width: 2000px){
-    header {padding: 0px 720px;}
+    header {padding: 0 720px;}
     .intro {padding: 0 720px;}
     .info {padding: 40px 840px;}
     .quote {padding: 100px 860px;}
+
+}
+
+@media only screen and (max-width: 1080px){
+    header {
+        padding: 0 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    header ul{
+        font-size:12px;
+        gap: 15px;
+        justify-content: center;
+    }
+    header p{
+        font-size: 20px;
+    }
+    
+    .intro {padding: 0;}
+    .info {padding: 0;}
+    .quote {padding: 0;}
 
 }
